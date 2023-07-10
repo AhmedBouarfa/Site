@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Création de scénario</title>
+</head>
+<body>
+    <h2>Création de scénario</h2>
+
+    <form action="scenario.php" method="POST">
+        <label for="scenario_name" style="color: aqua">Nom du scénario :</label>
+        <input type="text" name="scenario_name" id="scenario_name" required>
+
+        <label for="description" style="color: aqua">Description :</label>
+        <textarea name="description" id="description" rows="4" required></textarea>
+
+        <h3>Actionneurs :</h3>
+
+        <input style="color: aqua" type="checkbox" name="actionneur1" value="actionneur1"> Actionneur 1<br>
+        <input style="color: aqua" type="checkbox" name="actionneur2" value="actionneur2"> Actionneur 2<br>
+        <input style="color: aqua" type="checkbox" name="actionneur3" value="actionneur3"> Actionneur 3<br>
+
+        <input type="submit" value="Enregistrer le scénario">
+    </form>
+</body>
+</html>
